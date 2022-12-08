@@ -19,7 +19,7 @@
         "src/.umi/*"
       ],
       "umi": [
-        "/Users/qiancheng/Downloads/react-umi/node_modules/umi"
+        "/Users/qiancheng/Downloads/代码/react-umi/node_modules/umi"
       ],
       "umi/typings": [
         "src/.umi/typings"

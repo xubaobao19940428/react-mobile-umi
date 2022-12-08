@@ -1,13 +1,38 @@
-.nav_footer{
+.nav_footer {
     position: fixed;
     bottom: 0;
     height: 70px;
     width: 100%;
-    background-color: #f5f5f5;
+    background: #000000;
     display: flex;
     align-items: center;
-    li{
+    border-radius: 10px 10px 0 0;
+
+    .tabbar-item {
         flex: 1;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 400;
+        color: #9D9B9C;
+        line-height: 17px;
+
+        img {
+            width: 25px;
+        }
+
+        a {
+            margin-top: 5px;
+            text-decoration: none;
+            color: #9D9B9C;
+        }
+
+        &.item-select {
+            a {
+                color: #2ECBC7;
+            }
+        }
     }
+
 }

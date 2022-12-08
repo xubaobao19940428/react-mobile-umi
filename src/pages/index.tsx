@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-import yayJpg from '@/assets/yay.jpg';
-import { Button } from 'antd-mobile'
+import { Button,Space} from 'antd-mobile'
 import { getExpertLatestRecordList } from '@/request/expert'
 import './index.less'
 export default function HomePage() {
@@ -17,10 +16,17 @@ export default function HomePage() {
     return (
         <div>
             <h2>Yay! Welcome to umi!</h2>
-            <Button>{process.env.UMI_APP_FILE_URL}</Button>
-            <p>
-                <img src={yayJpg} width="388" />
-            </p>
+            <Space wrap>
+                <Button color='primary' fill='solid'>
+                    Solid
+                </Button>
+                <Button color='primary' fill='outline'>
+                    Outline
+                </Button>
+                <Button color='primary' fill='none'>
+                    None
+                </Button>
+            </Space>
             <p>
                 To get started, edit <code>pages/index.tsx</code> and save to reload.
             </p>

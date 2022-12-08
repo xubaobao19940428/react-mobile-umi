@@ -5,13 +5,14 @@ import React from 'react';
 
 export async function getRoutes() {
   return {
-    routes: {"1":{"path":"/haha","file":"@/pages/haha.tsx","parentId":"@@/global-layout","id":"1"},"2":{"path":"/","file":"@/pages/Tabar/index.tsx","parentId":"@@/global-layout","id":"2"},"3":{"path":"/","redirect":"/dashboard","parentId":"2","id":"3"},"4":{"exact":true,"path":"/dashboard","file":"@/pages/index.tsx","parentId":"2","id":"4"},"5":{"exact":true,"path":"/docs","file":"@/pages/docs/docs.tsx","parentId":"2","id":"5"},"@@/global-layout":{"id":"@@/global-layout","path":"/","file":"@/layouts/index.tsx","isLayout":true}},
+    routes: {"1":{"path":"/haha","file":"@/pages/haha.tsx","parentId":"@@/global-layout","id":"1"},"2":{"path":"/login","file":"@/pages/login/login.tsx","parentId":"@@/global-layout","id":"2"},"3":{"path":"/","file":"@/pages/Tabar/index.tsx","parentId":"@@/global-layout","id":"3"},"4":{"path":"/","redirect":"/dashboard","parentId":"3","id":"4"},"5":{"exact":true,"path":"/dashboard","file":"@/pages/index.tsx","parentId":"3","id":"5"},"6":{"exact":true,"path":"/docs","file":"@/pages/docs/docs.tsx","parentId":"3","id":"6"},"@@/global-layout":{"id":"@@/global-layout","path":"/","file":"@/layouts/index.tsx","isLayout":true}},
     routeComponents: {
 '1': React.lazy(() => import(/* webpackChunkName: "p__haha" */'@/pages/haha.tsx')),
-'2': React.lazy(() => import(/* webpackChunkName: "p__Tabar__index" */'@/pages/Tabar/index.tsx')),
-'3': React.lazy(() => import( './EmptyRoute')),
-'4': React.lazy(() => import(/* webpackChunkName: "p__index" */'@/pages/index.tsx')),
-'5': React.lazy(() => import(/* webpackChunkName: "p__docs__docs" */'@/pages/docs/docs.tsx')),
+'2': React.lazy(() => import(/* webpackChunkName: "p__login__login" */'@/pages/login/login.tsx')),
+'3': React.lazy(() => import(/* webpackChunkName: "p__Tabar__index" */'@/pages/Tabar/index.tsx')),
+'4': React.lazy(() => import( './EmptyRoute')),
+'5': React.lazy(() => import(/* webpackChunkName: "p__index" */'@/pages/index.tsx')),
+'6': React.lazy(() => import(/* webpackChunkName: "p__docs__docs" */'@/pages/docs/docs.tsx')),
 '@@/global-layout': React.lazy(() => import(/* webpackChunkName: "layouts__index" */'@/layouts/index.tsx')),
 },
   };

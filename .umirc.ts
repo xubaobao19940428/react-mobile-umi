@@ -16,6 +16,7 @@ export default defineConfig({
     scripts: ['https://assets.melive.shop/common/axios@0.18.0.min.js', 'https://assets.melive.shop/common/device-uuid.min.js', 'https://res2.wx.qq.com/open/js/jweixin-1.6.0.js'],
     routes: [
         { path: '/haha', component: '@/pages/haha' },
+        { path: '/login', component: '@/pages/login/login' },
 
         {
             path: '/',
