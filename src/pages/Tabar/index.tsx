@@ -32,8 +32,7 @@ export default function Tabar() {
    
     return (
 
-        <div>
-
+        <div className='layoutBox'>
             <Outlet />
             <ul className='nav_footer'>
                 {
